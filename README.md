@@ -15,8 +15,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -31,18 +29,10 @@ Users should be able to:
 ![Screenshot Desktop](./images/ss-desktop.png)
 ![Screenshot Mobile](./images/ss-mobile.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/Georgetxm/sunnyside-agency/tree/master)
+- Live Site URL: [Vercel App](https://sunnyside-agency-i3d12cbca-georgetxm.vercel.app/)
 
 ## My process
 
@@ -133,20 +123,15 @@ Custom root properties, and utilising it to create responsive text sizes.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 Moving forward, I'll implement a mobile-first workflow as a practice I've learned in this project that greatly reduced my CSS code. I'll also be heavily utilising CSS Grids with media queries to create layouts as they've allowed even items within a layout to be completely re-arranged at different screen sizes.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Learn CSS Grid the easy way - Norman Powell](https://www.youtube.com/watch?v=rg7Fvvl3taU) - This helped me understand CSS Grids
+- [CSS Breakpoints](https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/) - This is an amazing article elaborates on the common breakpoints to use based on analysis of the width of common devices.
 
 ## Author
 
-- LinkedIn - [George TEO Xuan Ming](https://www.linkedin.com/in/georgetxm/?originalSubdomain=sg)
+- LinkedIn - [George Teo Xuan Ming](https://www.linkedin.com/in/georgetxm/?originalSubdomain=sg)
 - Frontend Mentor - [@Georgetxm](https://www.frontendmentor.io/profile/Georgetxm)

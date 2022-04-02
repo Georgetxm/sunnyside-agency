@@ -14,7 +14,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -29,7 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot Desktop](./images/ss-desktop.png)
+![Screenshot Mobile](./images/ss-mobile.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
@@ -53,41 +53,89 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- JavaScript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Utilising CSS Grid's "grid-template-area" to create dynamic layouts.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.about { 
+  display: grid;
+  grid-template-areas:
+    "transform-image",
+    "..."
+}
+
+.about__items:nth-child(1) {
+  grid-area: transform-image;
+}
+...
+.about__items:nth-child(6) {
+  grid-area: photography;
+}
+
+```
+
+Combining JavaScript and CSS's custom data attribute to create the navigation bar.
+
+```css
+.primary-navigation[data-visible="true"] {
+  display: block;
+  position: absolute;
+  "..."
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+navToggle.addEventListener("click", () => {
+  const visibility = primaryNav.getAttribute("data-visible");
+  if (visibility === "false") {
+    primaryNav.setAttribute("data-visible", true);
+    navToggle.setAttribute("aria-expanded", true);
+  } else {
+    primaryNav.setAttribute("data-visible", false);
+    navToggle.setAttribute("aria-expanded", false);
+  }
+});
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Custom root properties, and utilising it to create responsive text sizes.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+:root {
+  --fs-header-title: 2em;
+  "..."
+  --fs-social-icons: 1.5em;
+}
+```
+
+```css
+@media (min-width: 16em) {
+  :root {
+    --fs-header-title: 1.5em;
+    "..."
+    --fs-social-icons: 1em;
+  }
+}
+```
+
+```css
+@media (min-width: 80em) {
+  :root {
+    --fs-header-title: 3em;
+    "..."
+    --fs-social-icons: 2em;
+  }
+}
+```
 
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+Moving forward, I'll implement a mobile-first workflow as a practice I've learned in this project that greatly reduced my CSS code. I'll also be heavily utilising CSS Grids with media queries to create layouts as they've allowed even items within a layout to be completely re-arranged at different screen sizes.
 
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
@@ -100,14 +148,5 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- LinkedIn - [George TEO Xuan Ming](https://www.linkedin.com/in/georgetxm/?originalSubdomain=sg)
+- Frontend Mentor - [@Georgetxm](https://www.frontendmentor.io/profile/Georgetxm)

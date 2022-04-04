@@ -26,8 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot Desktop](./images/ss-desktop.png)
-![Screenshot Mobile](./images/ss-mobile.png)
+Desktop Site            |  Mobile Site
+:-------------------------:|:-------------------------:
+![Screenshot Desktop](./images/ss-desktop.png) |  ![Screenshot Mobile](./images/ss-mobile.png)
+
+
+
 
 ### Links
 
